@@ -58,6 +58,27 @@ int main() {
         counter--;
         printf("\n");
     }
+    
+        int intput;
+    printf("kérem adjon meg egy számot: ");
+    scanf("%d",&intput);
+    for (int i = 1; i <= intput ; ++i) {
+        for (int j = 1; j <= intput; ++j) {
+            if(i == ((intput)/2)+1){
+                for (int k = 0; k<intput; k++){
+                    printf("*");
+                }
+                i++;
+                printf("\n ");
+            }
+            if(j == i || j == (intput/2)+1|| j == intput-i+1){
+                printf("*");
+            } else{
+                printf("-");
+            }
+        }
+        printf("\n ");
+    }
 
     //printf("Hello, World!\n");
     return 0;

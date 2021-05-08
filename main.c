@@ -59,7 +59,6 @@ int main() {
         printf("\n");
     }
     
-        int intput;
     printf("kérem adjon meg egy számot: ");
     scanf("%d",&intput);
     for (int i = 1; i <= intput ; ++i) {
